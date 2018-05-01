@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:LocationandPhotos"
+              xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="LocationandPhotos.MainPage">
+
+    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.6*"></RowDefinition>
+            <RowDefinition Height="0.1*"></RowDefinition>
+            <RowDefinition Height="0.1*"></RowDefinition>
+            <RowDefinition Height="0.1*"></RowDefinition>
+            
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <maps:Map x:Name="mapcontrol" Grid.Row="0" Grid.Column="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" MapType="Street"></maps:Map>
+        <Entry Grid.Row="1" Grid.Column="0" HorizontalOptions="FillAndExpand" Placeholder="Pincode" x:Name="entryzipcode"></Entry>
+        <Entry Grid.Row="2" Grid.Column="0" HorizontalOptions="FillAndExpand" Placeholder="Keywords" x:Name="entrykeyword"></Entry>
+        <Button Grid.Row="3" Grid.Column="0" x:Name="btnsearch" Text="Search" Clicked="btnsearch_clicked" BackgroundColor="#F79723" TextColor="White"></Button>
+       
+    </Grid>
+</ContentPage>

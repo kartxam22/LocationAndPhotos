@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+          
+                 x:Class="LocationandPhotos.LoadingPopup">
+    <AbsoluteLayout x:Name="LoadingBlock" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" >
+
+        <StackLayout x:Name="LoadingPopupStack" BackgroundColor="#F79723" HorizontalOptions="Center" VerticalOptions="Center" Spacing="20" WidthRequest="150" HeightRequest="50">
+            <StackLayout Padding="6" Orientation="Horizontal" BackgroundColor="Transparent" AbsoluteLayout.LayoutBounds="0.5, 0.5, -1, -1" AbsoluteLayout.LayoutFlags="PositionProportional" VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+                <ActivityIndicator x:Name="Loading" Color="White" IsRunning="true" VerticalOptions="Center" WidthRequest="40" HeightRequest="40" />
+                <Label x:Name="Loadinglbl" TextColor="White" Text="Loading..." VerticalOptions="Center" FontAttributes="Bold">
+
+                </Label>
+            </StackLayout>
+
+        </StackLayout>
+    </AbsoluteLayout>
+
+</pages:PopupPage>
